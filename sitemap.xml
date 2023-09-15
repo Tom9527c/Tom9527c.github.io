@@ -254,7 +254,7 @@
   </url>
   
   <url>
-    <loc>https://tom9527c.github.io/life/movies/index.html</loc>
+    <loc>https://tom9527c.github.io/life/music/index.html</loc>
     
     <lastmod>2023-09-14</lastmod>
     
@@ -263,7 +263,7 @@
   </url>
   
   <url>
-    <loc>https://tom9527c.github.io/life/music/index.html</loc>
+    <loc>https://tom9527c.github.io/life/movies/index.html</loc>
     
     <lastmod>2023-09-14</lastmod>
     
@@ -299,7 +299,7 @@
   </url>
   
   <url>
-    <loc>https://tom9527c.github.io/box/gallery/index.html</loc>
+    <loc>https://tom9527c.github.io/box/animation/index.html</loc>
     
     <lastmod>2023-09-14</lastmod>
     
@@ -308,7 +308,7 @@
   </url>
   
   <url>
-    <loc>https://tom9527c.github.io/box/animation/index.html</loc>
+    <loc>https://tom9527c.github.io/box/gallery/index.html</loc>
     
     <lastmod>2023-09-14</lastmod>
     
@@ -379,6 +379,13 @@
   </url>
   
   <url>
+    <loc>https://tom9527c.github.io/tags/HTML/</loc>
+    <lastmod>2023-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://tom9527c.github.io/tags/Mobile-%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91/</loc>
     <lastmod>2023-09-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -386,7 +393,7 @@
   </url>
   
   <url>
-    <loc>https://tom9527c.github.io/tags/HTML/</loc>
+    <loc>https://tom9527c.github.io/tags/HTML5/</loc>
     <lastmod>2023-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -401,6 +408,27 @@
   
   <url>
     <loc>https://tom9527c.github.io/tags/JS/</loc>
+    <lastmod>2023-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://tom9527c.github.io/tags/WebSocket/</loc>
+    <lastmod>2023-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://tom9527c.github.io/tags/jquery/</loc>
+    <lastmod>2023-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://tom9527c.github.io/tags/Less/</loc>
     <lastmod>2023-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -429,55 +457,6 @@
   
   <url>
     <loc>https://tom9527c.github.io/tags/%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B6/</loc>
-    <lastmod>2023-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://tom9527c.github.io/tags/WebSocket/</loc>
-    <lastmod>2023-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://tom9527c.github.io/tags/HTML5/</loc>
-    <lastmod>2023-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://tom9527c.github.io/tags/AJAX/</loc>
-    <lastmod>2023-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://tom9527c.github.io/tags/AXIOS/</loc>
-    <lastmod>2023-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://tom9527c.github.io/tags/jquery/</loc>
-    <lastmod>2023-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://tom9527c.github.io/tags/CSS3/</loc>
-    <lastmod>2023-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://tom9527c.github.io/tags/Less/</loc>
     <lastmod>2023-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -533,35 +512,7 @@
   </url>
   
   <url>
-    <loc>https://tom9527c.github.io/tags/eggjs/</loc>
-    <lastmod>2023-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://tom9527c.github.io/tags/mysql/</loc>
-    <lastmod>2023-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://tom9527c.github.io/tags/TypeScript/</loc>
-    <lastmod>2023-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://tom9527c.github.io/tags/Sass/</loc>
-    <lastmod>2023-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://tom9527c.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91/</loc>
     <lastmod>2023-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -583,6 +534,55 @@
   
   <url>
     <loc>https://tom9527c.github.io/tags/react/</loc>
+    <lastmod>2023-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://tom9527c.github.io/tags/eggjs/</loc>
+    <lastmod>2023-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://tom9527c.github.io/tags/mysql/</loc>
+    <lastmod>2023-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://tom9527c.github.io/tags/TypeScript/</loc>
+    <lastmod>2023-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://tom9527c.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91/</loc>
+    <lastmod>2023-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://tom9527c.github.io/tags/AJAX/</loc>
+    <lastmod>2023-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://tom9527c.github.io/tags/AXIOS/</loc>
+    <lastmod>2023-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://tom9527c.github.io/tags/CSS3/</loc>
     <lastmod>2023-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
