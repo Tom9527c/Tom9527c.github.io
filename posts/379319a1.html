@@ -1,0 +1,547 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"><title>NPM | Tom</title><meta name="keywords" content="前端,NPM,包管理工具,node,yarn,DOS 命令"><meta name="author" content="Tom"><meta name="copyright" content="Tom"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-touch-fullscreen" content="yes"><meta name="apple-mobile-web-app-title" content="NPM"><meta name="application-name" content="NPM"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="ffffff"><meta property="og:type" content="article"><meta property="og:title" content="NPM"><meta property="og:url" content="https://tom9527c.github.io/posts/379319a1.html"><meta property="og:site_name" content="Tom"><meta property="og:description" content="NPM"><meta property="og:locale" content="zh-CN"><meta property="og:image" content="https://mypic-ezp.pages.dev/img/img26.jpg"><meta property="article:author" content="Tom"><meta property="article:tag" content="代码,博客"><meta name="twitter:card" content="summary"><meta name="twitter:image" content="https://mypic-ezp.pages.dev/img/img26.jpg"><meta name="description" content="NPM"><link rel="shortcut icon" href="/favicon.ico"><link rel="canonical" href="https://tom9527c.github.io/posts/379319a1"><link rel="preconnect" href="//cdn.cbd.int"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="google-site-verification" content="xxx"/><meta name="baidu-site-verification" content="code-xxx"/><meta name="msvalidate.01" content="xxx"/><link rel="manifest" href="/manifest.json"/><meta name="msapplication-TileColor" content="var(--anzhiyu-main)"/><link rel="mask-icon" href="/img/siteicon/coffee.png" color="#5bbad5"/><link rel="apple-touch-icon" sizes="180x180" href="/img/siteicon/coffee.png"/><link rel="apple-touch-icon-precomposed" sizes="180x180" href="/img/siteicon/coffee.png"/><link rel="icon" type="image/png" sizes="32x32" href="/img/siteicon/coffee.png"/><link rel="icon" type="image/png" sizes="16x16" href="/img/siteicon/coffee.png"/><link rel="bookmark" href="/img/siteicon/coffee.png"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-2048-2732.jpg" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-2732-2048.jpg" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-1668-2388.jpg" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-2388-1668.jpg" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-1536-2048.jpg" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-2048-1536.jpg" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-1668-2224.jpg" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-2224-1668.jpg" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-1620-2160.jpg" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-2160-1620.jpg" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-1290-2796.jpg" media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-2796-1290.jpg" media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-1179-2556.jpg" media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-2556-1179.jpg" media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-1284-2778.jpg" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-2778-1284.jpg" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-1170-2532.jpg" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-2532-1170.jpg" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-1125-2436.jpg" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-2436-1125.jpg" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-1242-2688.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-2688-1242.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-828-1792.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-1792-828.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-1242-2208.jpg" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-2208-1242.jpg" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-750-1334.jpg" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-1334-750.jpg" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-640-1136.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-1136-640.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"/><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@1.0.17/lib/assets/font-awesome-animation.min.css"><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.cbd.int/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/@fancyapps/ui@5.0.28/dist/fancybox/fancybox.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  linkPageTop: undefined,
+  peoplecanvas: undefined,
+  postHeadAiDescription: {"enable":true,"gptName":"AnZhiYu","mode":"local","switchBtn":false,"btnLink":"https://afdian.net/item/886a79d4db6711eda42a52540025c377","randomNum":3,"basicWordCount":1000,"key":"xxxx","Referer":"https://xx.xx/"},
+  diytitle: {"enable":true,"leaveTitle":"👀跑哪里去了~","backTitle":"🐖抓到你啦～"},
+  LA51: undefined,
+  greetingBox: {"enable":true,"default":"晚上好👋","list":[{"greeting":"晚安😴","startTime":0,"endTime":5},{"greeting":"早上好鸭👋, 祝你一天好心情！","startTime":6,"endTime":9},{"greeting":"上午好👋, 状态很好，鼓励一下～","startTime":10,"endTime":10},{"greeting":"11点多啦, 在坚持一下就吃饭啦～","startTime":11,"endTime":11},{"greeting":"午安👋, 宝贝","startTime":12,"endTime":14},{"greeting":"🌈充实的一天辛苦啦！","startTime":14,"endTime":18},{"greeting":"19点喽, 奖励一顿丰盛的大餐吧🍔。","startTime":19,"endTime":19},{"greeting":"晚上好👋, 在属于自己的时间好好放松😌~","startTime":20,"endTime":24}]},
+  twikooEnvId: '',
+  commentBarrageConfig:undefined,
+  root: '/',
+  preloader: {"source":3},
+  friends_vue_info: undefined,
+  navMusic: true,
+  mainTone: undefined,
+  authorStatus: {"skills":["🤖️ 数码科技爱好者","🔍 分享与热心帮助","🏠 智能家居小能手","🔨 设计开发一条龙","🤝 专修交互与设计","🏃 脚踏实地行动派","🧱 团队小组发动机","💢 壮汉人狠话不多"]},
+  algolia: {"appId":"IZ92U5VWUK","apiKey":"74b5762fa3c8aaafea1158754e1ca277","indexName":"aurora","hits":{"per_page":6},"languages":{"input_placeholder":"输入关键词后按下回车查找","hits_empty":"找不到您查询的内容：${query}","hits_stats":"找到 ${hits} 条结果，用时 ${time} 毫秒"}},
+  localSearch: undefined,
+  translate: {"defaultEncoding":1,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简","rightMenuMsgToTraditionalChinese":"转为繁体","rightMenuMsgToSimplifiedChinese":"转为简体"},
+  noticeOutdate: {"limitDay":365,"position":"top","messagePrev":"距离上次更新已经","messageNext":"天了，文章内容可能已经过时。"},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":330},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    simplehomepage: false,
+    post: true
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"copy":true,"copyrightEbable":false,"limitCount":50,"languages":{"author":"作者: Tom","link":"链接: ","source":"来源: Tom","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。","copySuccess":"复制成功，复制和转载请标注本文地址"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#3b70fc","bgDark":"#1f1f1f","position":"top-center"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.min.js',
+      css: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  shortcutKey: undefined,
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  configTitle: 'Tom',
+  title: 'NPM',
+  postAI: '',
+  pageFillDescription: 'NPM, 安装, 配置文件, package.json, package-lock.json, CLI命令, yarn, DOS 命令是随同一起安装的包管理工具允许用户从服务器下载别人编写的第三方包到本地使用允许用户从服务器下载并安装别人编写的命令行程序到本地使用允许用户将自己编写的包或命令行程序上传到服务器供别人使用安装下载地址检查安装是否成功运行窗口打开命令行窗口命令行窗口输入命令查看到当前安装的版本信息命令行窗口输入命令查看到当前安装的版本信息配置文件配置文件可以设置当前工程的描述信息以及所用到的依赖包文件是一个格式的文件必须严格的语法属性名必须使用双引号最后一个子元素后不允许写逗号不允许在文件中添加与无关的字符如注释等文件可以使用命令生成表示项目依赖整个项目运行过程中都需要表示开发依赖只有在开发过程中需要添加包的版本规则与最新主要版本匹配与最新次要版本匹配是指定的包存在版本匹配问题具体安装包的版本信息将在文件中进行锁定该文件在安装包时自动生成并修改用户不需要手动修改命令在当前位置初始化包配置文件该命令会提示你输入项目名称项目描述项目版本待在当前位置初始化一个默认的别名安装文件中的指定的包别名或安装指定名称的包例如安装当安装完成后会在当前目录下的如果没有会自动创建的目录中就会包一个名称的目录表示全局安装全局安装的包会被放在当前用户安装指定版本号的包例如参数表示安装包成功后并将包信息自动添加到文件项目依赖项中参数表示将包信息自动添加到文件的开发依赖中卸载指定的包别名查看当前项目中安装的所有包别名查看所有全局安装的包查看当前包的信息别名不指定包名的话则输入当前项目信息加入参数可以将所的所有版本都输出查看指定包的依赖查看配置信息查看详细配置信息更改镜像源地址设置淘宝镜像源默认镜像源获取帮助信息例如查看命令的帮助文档命令参数文档官方网站也是目前比较流行的一款包管理工具与选择一个使用即可使用文档命令及的操作都是在命令行中进行的需要掌握几个常用的命令测试网络连接状况以及信息包发送和接收状况非常有用表示将不间断向目标发送数据包直到我们强迫其停止查看当前的网络信息查看当前目录下所有目录及文件系统中磁盘切换盘符进入指定目录进入当前目录进入上一级目录在输入目录路径时可以使用键补全清屏结束当前命令上下箭头可调出历史命令',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-07-05 18:05:26',
+  postMainColor: '',
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 6 || hour >= 18
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+          else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><style id="themeColor"></style><style id="rightSide"></style><style id="transPercent"></style><style id="blurNum"></style><style id="settingStyle"></style><span id="fps"></span><style id="defineBg"></style><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css"  media="defer" onload="this.media='all'"><link rel="stylesheet" href="/custom/css/elementUI.min.css"  media="defer" onload="this.media='all'"><link rel="stylesheet" href="/custom/css/aurora.css" media="defer" onload="this.media='all'"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.2.0"><link rel="alternate" href="/atom.xml" title="Tom" type="application/atom+xml">
+</head><body data-type="anzhiyu"><div id="web_bg"></div><div id="an_music_bg"></div><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><img class="loading-img nolazyload" alt="加载头像" src="https://npm.elemecdn.com/anzhiyu-blog-static@1.0.4/img/avatar.jpg"/><div class="loading-image-dot"></div></div></div><script>const preloader = {
+  endLoading: () => {
+    document.getElementById('loading-box').classList.add("loaded");
+  },
+  initLoading: () => {
+    document.getElementById('loading-box').classList.remove("loaded")
+  }
+}
+window.addEventListener('load',()=> { preloader.endLoading() })
+setTimeout(function(){preloader.endLoading();},10000)
+
+if (true) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+}</script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.10/progress_bar/progress_bar.css"/><script async="async" src="https://cdn.cbd.int/pace-js@1.2.4/pace.min.js" data-pace-options="{ &quot;restartOnRequestAfter&quot;:false,&quot;eventLag&quot;:false}"></script><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><div id="nav-group"><span id="blog_name"><a id="site-name" href="/" accesskey="h"><div class="title">Tom</div><i class="anzhiyufont anzhiyu-icon-house-chimney"></i></a></span><div class="mask-name-container"><div id="name-container"><a id="page-name" href="javascript:anzhiyu.scrollToDest(0, 500)" rel="external nofollow noreferrer">PAGE_NAME</a></div></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);" rel="external nofollow noreferrer"><span> 文章</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);" rel="external nofollow noreferrer"><span> 友链</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/comments/"><i class="anzhiyufont anzhiyu-icon-envelope faa-tada" style="font-size: 0.9em;"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);" rel="external nofollow noreferrer"><span> 我的</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/music/"><i class="anzhiyufont anzhiyu-icon-music faa-tada" style="font-size: 0.9em;"></i><span> 音乐馆</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/bangumis/"><i class="anzhiyufont anzhiyu-icon-bilibili faa-tada" style="font-size: 0.9em;"></i><span> 追番页</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/album/"><i class="anzhiyufont anzhiyu-icon-images faa-tada" style="font-size: 0.9em;"></i><span> 相册集</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/collect/"><i class="anzhiyufont anzhiyu-icon-book-open faa-tada" style="font-size: 0.9em;"></i><span> 藏宝阁</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);" rel="external nofollow noreferrer"><span> 关于</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> 关于本人</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><i class="anzhiyufont anzhiyu-icon-lightbulb faa-tada" style="font-size: 0.9em;"></i><span> 闲言碎语</span></a></li><li><a class="site-page child faa-parent animated-hover" href="javascript:toRandomPost()" rel="external nofollow noreferrer"><i class="anzhiyufont anzhiyu-icon-shoe-prints1 faa-tada" style="font-size: 0.9em;"></i><span> 随便逛逛</span></a></li></ul></div></div></div><div id="nav-right"><div class="nav-button" id="randomPost_button"><a class="site-page" onclick="toRandomPost()" title="随机前往一个文章" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="anzhiyufont anzhiyu-icon-dice"></i></a></div><div class="nav-button" id="search-button"><a class="site-page social-icon search" href="javascript:void(0);" rel="external nofollow noreferrer" title="搜索🔍" accesskey="s"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span> 搜索</span></a></div><input id="center-console" type="checkbox"/><label class="widget" for="center-console" title="中控台" onclick="anzhiyu.switchConsole();"><i class="left"></i><i class="widget center"></i><i class="widget right"></i></label><div id="console"><div class="console-card-group-reward"><ul class="reward-all console-card"><li class="reward-item"><a href="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png" rel="external nofollow noreferrer" target="_blank"><img class="post-qr-code-img" alt="微信" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png" rel="external nofollow noreferrer" target="_blank"><img class="post-qr-code-img" alt="支付宝" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div><div class="console-card-group"><div class="console-card-group-left"><div class="console-card" id="card-newest-comments"><div class="card-content"><div class="author-content-item-tips">互动</div><span class="author-content-item-title"> 最新评论</span></div><div class="aside-list"><span>正在加载中...</span></div></div></div><div class="console-card-group-right"><div class="console-card tags"><div class="card-content"><div class="author-content-item-tips">兴趣点</div><span class="author-content-item-title">寻找你感兴趣的领域</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/AJAX/" style="font-size: 1.05rem;">AJAX<sup>1</sup></a><a href="/tags/AXIOS/" style="font-size: 1.05rem;">AXIOS<sup>1</sup></a><a href="/tags/CSS/" style="font-size: 1.05rem;">CSS<sup>3</sup></a><a href="/tags/CSS3/" style="font-size: 1.05rem;">CSS3<sup>1</sup></a><a href="/tags/DOS-%E5%91%BD%E4%BB%A4/" style="font-size: 1.05rem;">DOS 命令<sup>1</sup></a><a href="/tags/ES6/" style="font-size: 1.05rem;">ES6<sup>4</sup></a><a href="/tags/HTML/" style="font-size: 1.05rem;">HTML<sup>3</sup></a><a href="/tags/HTML5/" style="font-size: 1.05rem;">HTML5<sup>1</sup></a><a href="/tags/JS/" style="font-size: 1.05rem;">JS<sup>1</sup></a><a href="/tags/Javascript/" style="font-size: 1.05rem;">Javascript<sup>1</sup></a><a href="/tags/Less/" style="font-size: 1.05rem;">Less<sup>1</sup></a><a href="/tags/Linux/" style="font-size: 1.05rem;">Linux<sup>1</sup></a><a href="/tags/Markdown/" style="font-size: 1.05rem;">Markdown<sup>1</sup></a><a href="/tags/Mobile-%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91/" style="font-size: 1.05rem;">Mobile(移动端开发)<sup>1</sup></a><a href="/tags/NPM/" style="font-size: 1.05rem;">NPM<sup>1</sup></a><a href="/tags/Sass/" style="font-size: 1.05rem;">Sass<sup>1</sup></a><a href="/tags/TypeScript/" style="font-size: 1.05rem;">TypeScript<sup>4</sup></a><a href="/tags/VUE/" style="font-size: 1.05rem;">VUE<sup>1</sup></a><a href="/tags/Vuex/" style="font-size: 1.05rem;">Vuex<sup>1</sup></a><a href="/tags/WebSocket/" style="font-size: 1.05rem;">WebSocket<sup>1</sup></a><a href="/tags/Webpack/" style="font-size: 1.05rem;">Webpack<sup>2</sup></a><a href="/tags/brew/" style="font-size: 1.05rem;">brew<sup>1</sup></a><a href="/tags/eggjs/" style="font-size: 1.05rem;">eggjs<sup>1</sup></a><a href="/tags/jquery/" style="font-size: 1.05rem;">jquery<sup>1</sup></a><a href="/tags/mysql/" style="font-size: 1.05rem;">mysql<sup>1</sup></a><a href="/tags/node/" style="font-size: 1.05rem;">node<sup>1</sup></a><a href="/tags/nvm/" style="font-size: 1.05rem;">nvm<sup>1</sup></a><a href="/tags/react/" style="font-size: 1.05rem;">react<sup>1</sup></a><a href="/tags/vue-i18n/" style="font-size: 1.05rem;">vue-i18n<sup>1</sup></a><a href="/tags/yarn/" style="font-size: 1.05rem;">yarn<sup>1</sup></a><a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 1.05rem;">前端<sup>25</sup></a><a href="/tags/%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B6/" style="font-size: 1.05rem;">前端框架<sup>2</sup></a><a href="/tags/%E5%8C%85%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/" style="font-size: 1.05rem;">包管理工具<sup>1</sup></a><a href="/tags/%E5%91%BD%E4%BB%A4/" style="font-size: 1.05rem;">命令<sup>1</sup></a><a href="/tags/%E5%A4%96%E6%8C%82%E6%A0%87%E7%AD%BE/" style="font-size: 1.05rem;">外挂标签<sup>1</sup></a><a href="/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91/" style="font-size: 1.05rem;">微信小程序开发<sup>1</sup></a><a href="/tags/%E7%9F%A5%E5%85%B6%E6%89%80%E4%BB%A5%E7%84%B6/" style="font-size: 1.05rem;">知其所以然<sup>3</sup></a><a href="/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 1.05rem;">笔记<sup>3</sup></a><a href="/tags/%E7%BB%83%E4%B9%A0/" style="font-size: 1.05rem;">练习<sup>6</sup></a><a href="/tags/%E9%9D%99%E6%80%81%E6%A8%A1%E5%9D%97%E6%89%93%E5%8C%85%E5%99%A8/" style="font-size: 1.05rem;">静态模块打包器<sup>1</sup></a></div></div><hr/></div></div><div class="console-card history"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-box-archiv"></i><span>文章</span></div><div class="card-archives"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-archive"></i><span>归档</span><a class="card-more-btn" href="/archives/" title="查看更多">
+    <i class="anzhiyufont anzhiyu-icon-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/07/"><span class="card-archive-list-date">七月 2024</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/03/"><span class="card-archive-list-date">三月 2024</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">3</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/02/"><span class="card-archive-list-date">二月 2024</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/12/"><span class="card-archive-list-date">十二月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/11/"><span class="card-archive-list-date">十一月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">2</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/10/"><span class="card-archive-list-date">十月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">5</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/09/"><span class="card-archive-list-date">九月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">23</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/08/"><span class="card-archive-list-date">八月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">7</span><span>篇</span></div></a></li></ul></div><hr/></div></div></div><div class="button-group"><div class="console-btn-item"><a class="darkmode_switchbutton" title="显示模式切换" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="anzhiyufont anzhiyu-icon-moon"></i></a></div><div class="console-btn-item" id="consoleHideAside" onclick="anzhiyu.hideAsideBtn()" title="边栏显示控制"><a class="asideSwitch"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></a></div><div class="console-btn-item" id="consoleMusic" onclick="anzhiyu.musicToggle()" title="音乐开关"><a class="music-switch"><i class="anzhiyufont anzhiyu-icon-music"></i></a></div></div><div class="console-mask" onclick="anzhiyu.hideConsole()" href="javascript:void(0);" rel="external nofollow noreferrer"></div></div><div class="nav-button" id="nav-totop"><a class="totopbtn" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i><span id="percent" onclick="anzhiyu.scrollToDest(0,500)">0</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);" rel="external nofollow noreferrer" title="切换"><i class="anzhiyufont anzhiyu-icon-bars"></i></a></div></div></div></nav><div id="post-info"><div id="post-firstinfo"><div class="meta-firstline"><a class="post-meta-original">原创</a><span class="post-meta-categories"><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-inbox post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url">前端</a></span><span class="article-meta tags"><a class="article-meta__tags" href="/tags/%E5%89%8D%E7%AB%AF/" tabindex="-1" itemprop="url"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>前端</span></a><a class="article-meta__tags" href="/tags/NPM/" tabindex="-1" itemprop="url"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>NPM</span></a><a class="article-meta__tags" href="/tags/%E5%8C%85%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/" tabindex="-1" itemprop="url"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>包管理工具</span></a><a class="article-meta__tags" href="/tags/node/" tabindex="-1" itemprop="url"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>node</span></a><a class="article-meta__tags" href="/tags/yarn/" tabindex="-1" itemprop="url"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>yarn</span></a><a class="article-meta__tags" href="/tags/DOS-%E5%91%BD%E4%BB%A4/" tabindex="-1" itemprop="url"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>DOS 命令</span></a></span></div></div><h1 class="post-title" itemprop="name headline">NPM</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" itemprop="dateCreated datePublished" datetime="2023-09-15T17:20:16.000Z" title="发表于 2023-09-16 01:20:16">2023-09-16</time><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-history post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" itemprop="dateCreated datePublished" datetime="2024-07-05T10:05:26.614Z" title="更新于 2024-07-05 18:05:26">2024-07-05</time></span></div><div class="meta-secondline"><span class="post-meta-separator"></span><span class="post-meta-wordcount"><i class="anzhiyufont anzhiyu-icon-file-word post-meta-icon" title="文章字数"></i><span class="post-meta-label" title="文章字数">字数总计:</span><span class="word-count" title="文章字数">1.3k</span><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-clock post-meta-icon" title="阅读时长"></i><span class="post-meta-label" title="阅读时长">阅读时长:</span><span>5分钟</span></span><span class="post-meta-separator"></span><span class="post-meta-pv-cv" id="" data-flag-title="NPM"><i class="anzhiyufont anzhiyu-icon-fw-eye post-meta-icon"></i><span class="post-meta-label" title="阅读量">阅读量:</span><span id="busuanzi_value_page_pv"><i class="anzhiyufont anzhiyu-icon-spinner anzhiyu-spin"></i></span></span><span class="post-meta-separator">       </span><span class="post-meta-position" title="作者IP属地为广州"><i class="anzhiyufont anzhiyu-icon-location-dot"></i>广州</span></div></div></div><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"></use><use href="#gentle-wave" x="48" y="3"></use><use href="#gentle-wave" x="48" y="5"></use><use href="#gentle-wave" x="48" y="7"></use></g></svg></section><div id="post-top-cover"><img class="nolazyload" id="post-top-bg" src="https://mypic-ezp.pages.dev/img/img26.jpg"></div></header><main id="blog-container"><div class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container" itemscope itemtype="https://tom9527c.github.io/posts/379319a1.html"><header><a class="post-meta-categories" href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url">前端</a><a href="/tags/%E5%89%8D%E7%AB%AF/" tabindex="-1" itemprop="url">前端</a><a href="/tags/NPM/" tabindex="-1" itemprop="url">NPM</a><a href="/tags/%E5%8C%85%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/" tabindex="-1" itemprop="url">包管理工具</a><a href="/tags/node/" tabindex="-1" itemprop="url">node</a><a href="/tags/yarn/" tabindex="-1" itemprop="url">yarn</a><a href="/tags/DOS-%E5%91%BD%E4%BB%A4/" tabindex="-1" itemprop="url">DOS 命令</a><h1 id="CrawlerTitle" itemprop="name headline">NPM</h1><span itemprop="author" itemscope itemtype="http://schema.org/Person">Tom</span><time itemprop="dateCreated datePublished" datetime="2023-09-15T17:20:16.000Z" title="发表于 2023-09-16 01:20:16">2023-09-16</time><time itemprop="dateCreated datePublished" datetime="2024-07-05T10:05:26.614Z" title="更新于 2024-07-05 18:05:26">2024-07-05</time></header><h2 id="NPM"><a href="#NPM" class="headerlink" title="NPM"></a>NPM</h2><p>NPM是随同 Node.js 一起安装的包管理工具：</p>
+<ul>
+<li>允许用户从NPM服务器下载别人编写的第三方包到本地使用。</li>
+<li>允许用户从NPM服务器下载并安装别人编写的命令行程序到本地使用。</li>
+<li>允许用户将自己编写的包或命令行程序上传到NPM服务器供别人使用。</li>
+</ul>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><ol>
+<li><p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://nodejs.org/zh-cn/download/">下载地址：nodejs.org/zh-cn/download/</a></p>
+</li>
+<li><p>检查安装是否成功：</p>
+<ul>
+<li><p>运行（win + r）窗口 <code>cmd</code> 打开命令行窗口。</p>
+</li>
+<li><p>命令行窗口输入命令：<code>node --version</code> 查看到当前node.js安装的版本信息。</p>
+</li>
+<li><p>命令行窗口输入命令：<code>npm --version</code> 查看到当前npm 安装的版本信息。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="data:image/png;base64,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" alt=""></p>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h3><h4 id="package-json"><a href="#package-json" class="headerlink" title="package.json"></a>package.json</h4><p>package.json 配置文件可以设置当前工程的描述信息以及所用到的依赖包。</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;my-work&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;version&quot;</span><span class="punctuation">:</span> <span class="string">&quot;1.0.0&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;description&quot;</span><span class="punctuation">:</span> <span class="string">&quot;A Vue.js project&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;author&quot;</span><span class="punctuation">:</span> <span class="string">&quot;dfdf &lt;123@456.com&gt;&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;private&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;scripts&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;dev&quot;</span><span class="punctuation">:</span> <span class="string">&quot;webpack-dev-server --inline --progress --config build/webpack.dev.conf.js&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;start&quot;</span><span class="punctuation">:</span> <span class="string">&quot;npm run dev&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;build&quot;</span><span class="punctuation">:</span> <span class="string">&quot;node build/build.js&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;dependencies&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;vue&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^2.5.2&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;vue-router&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^3.3.4&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;vuex&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^3.4.0&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;devDependencies&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;autoprefixer&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^7.1.2&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;babel-core&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^6.22.1&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;babel-helper-vue-jsx-merge-props&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^2.0.3&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;babel-loader&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^7.1.1&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>package.json 文件是一个JSON格式的文件，必须严格的json语法。</p>
+<ol>
+<li>属性名必须使用 <strong>双引号</strong> “”</li>
+<li>最后一个子元素后不允许写 <strong>逗号</strong> ，</li>
+<li>不允许在文件中添加与 json 无关的字符，如注释等</li>
+<li>package.json 文件可以使用命令 <code>npm init --yes</code>生成</li>
+</ol>
+</blockquote>
+<p><code>dependencies</code> 表示项目依赖（整个项目运行过程中都需要），<code>devDependencies</code>表示开发依赖（只有在开发过程中需要）。</p>
+<p>添加包的版本规则：</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">&quot;dependencies&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;vue&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^2.5.2&quot;</span><span class="punctuation">,</span> <span class="comment">//与最新主要版本（1.x.x）匹配</span></span><br><span class="line">    <span class="attr">&quot;vue-router&quot;</span><span class="punctuation">:</span><span class="string">&quot;~3.3.4&quot;</span><span class="punctuation">,</span> <span class="comment">////与最新次要版本（1.2.x）匹配</span></span><br><span class="line">    <span class="attr">&quot;vuex&quot;</span><span class="punctuation">:</span> <span class="string">&quot;3.4.0&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br></pre></td></tr></table></figure>
+<h4 id="package-lock-json"><a href="#package-lock-json" class="headerlink" title="package-lock.json"></a>package-lock.json</h4><p><code>package.json</code> 是指定的包存在版本匹配问题，具体安装包的版本信息将在 <code>package-lock.json</code>文件中进行锁定。该文件在 <code>npm install</code>安装包时自动生成并修改，用户不需要手动修改。</p>
+<h3 id="CLI命令"><a href="#CLI命令" class="headerlink" title="CLI命令"></a>CLI命令</h3><ol>
+<li><p><code>npm init</code> 在当前位置初始化包配置文件 <code>package.json</code>，该命令会提示你输入项目名称，项目描述、项目版本待。</p>
+</li>
+<li><p><code>npm init --yes</code>  在当前位置初始化一个默认的 <code>package.json</code>。</p>
+<blockquote>
+<p>别名：<code>npm init -y</code></p>
+</blockquote>
+</li>
+<li><p><code>npm install</code>    安装 <code>package.json</code>文件中的指定的包。</p>
+<blockquote>
+<p>别名：<code>npm i</code> 或 <code>npm add</code></p>
+</blockquote>
+</li>
+<li><p><code>npm install &lt;packageName&gt;</code> 安装指定名称的包。例如安装jquery <code>npm install jquery</code>,当安装完成后会在当前目录下的<code>node_modules</code>（如果没有会自动创建·<code>node_modules</code>）的目录中就会包一个名称jquery的目录。</p>
+</li>
+<li><p><code>npm install &lt;packageName&gt; -g</code> -g 表示全局安装。全局安装的包会被放在 <em>C:\Users\&lt;当前用户..&gt;\AppData\Roaming\npm</em></p>
+</li>
+<li><p><code>npm install &lt;packageName@version&gt;</code>安装指定版本号的包：例如：<code>npm install jquery@3.1.0</code></p>
+</li>
+<li><p><code>npm install &lt;packageName&gt; --save</code> —save 参数表示安装包成功后，并将包信息自动添加到package.json文件 dependencies(项目依赖) 项中。</p>
+</li>
+<li><p><code>npm install &lt;packageName&gt; --save-dev</code> —save-dev 参数表示将包信息自动添加到package.json文件 的devDependencies（开发依赖）中。</p>
+</li>
+<li><p><code>npm uninstall &lt;packageName&gt;</code> — 卸载指定的包。</p>
+<blockquote>
+<p>别名：<code>npm remove</code> , <code>npm rm</code> , <code>npm un</code></p>
+</blockquote>
+</li>
+<li><p><code>npm list</code> 查看当前项目中安装的所有包。</p>
+<blockquote>
+<p>别名：<code>npm ls</code> , <code>npm la</code> , <code>npm ll</code></p>
+</blockquote>
+</li>
+<li><p><code>npm list -g</code> 查看所有全局安装的包。</p>
+</li>
+<li><p><code>npm view &lt;packageName&gt;</code> 查看当前包的信息</p>
+<blockquote>
+<ul>
+<li>别名：<code>npm info</code> , <code>npm show</code> , <code>npm v</code></li>
+<li>不指定包名的话则输入当前项目信息</li>
+</ul>
+</blockquote>
+</li>
+<li><p><code>npm view &lt;packageName&gt; versions --json</code> 加入参数 —json可以将所的所有版本都输出</p>
+</li>
+<li><p><code>npm view &lt;packageName&gt; dependencies</code> 查看指定包的依赖。</p>
+</li>
+<li><p><code>npm config list</code> 查看 npm 配置信息</p>
+</li>
+<li><p><code>npm config list -l</code> 查看 npm 详细配置信息</p>
+</li>
+<li><p><code>npm config set registry &lt;URL&gt;</code> 更改镜像源地址：</p>
+<blockquote>
+<ul>
+<li>设置淘宝镜像源: <code>npm config set registry http://registry.npm.taobao.org</code></li>
+<li>默认镜像源：<code>npm config set registry https://registry.npmjs.org</code></li>
+</ul>
+</blockquote>
+</li>
+<li><p><code>npm help</code> 获取帮助信息，例如：<code>npm help ls</code>查看 ls命令的帮助文档</p>
+</li>
+</ol>
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://docs.npmjs.com/cli-documentation/">cli-命令参数文档</a></p>
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.npmjs.com/">npmjs官方网站</a></p>
+<h2 id="yarn"><a href="#yarn" class="headerlink" title="yarn"></a>yarn</h2><p>yarn也是目前比较流行的一款包管理工具。npm与yarn 选择一个使用即可。</p>
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://yarn.bootcss.com/">yarn使用文档</a></p>
+<h2 id="DOS-命令"><a href="#DOS-命令" class="headerlink" title="DOS 命令"></a>DOS 命令</h2><p>npm 及 yarn的操作都是在命令行中进行的。需要掌握几个常用的dos命令</p>
+<ol>
+<li><p><code>ping &lt;ipAddr&gt;</code> 测试网络连接状况以及信息包发送和接收状况非常有用</p>
+<ul>
+<li><code>-t</code> 表示将不间断向目标IP发送数据包，直到我们强迫其停止</li>
+</ul>
+</li>
+<li><p><code>ipconfig</code> 查看当前的网络信息</p>
+</li>
+<li><p><code>dir</code>  查看当前目录下所有目录及文件</p>
+</li>
+<li><p>windows 系统中磁盘切换：盘符: + <code>enter</code>  </p>
+</li>
+<li><p><code>cd &lt;url&gt;</code> 进入指定目录</p>
+<blockquote>
+<ol>
+<li><code>cd .</code> 进入当前目录</li>
+<li><code>cd ..</code> 进入上一级目录</li>
+<li>在输入目录路径时可以使用 <code>tab</code>键补全</li>
+</ol>
+</blockquote>
+</li>
+<li><p><code>cls</code> 清屏</p>
+</li>
+<li><p>结束当前命令：<code>ctrl</code> + <code>c</code></p>
+</li>
+<li><p>上下箭头可调出历史命令</p>
+</li>
+</ol>
+</article><div class="post-copyright"><div class="copyright-cc-box"><i class="anzhiyufont anzhiyu-icon-copyright"></i></div><div class="post-copyright__author_box"><a class="post-copyright__author_img" href="/" title="头像"><img class="post-copyright__author_img_back" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://tuchuang.voooe.cn/images/2023/01/02/avatar.webp" title="头像" alt="头像"><img class="post-copyright__author_img_front" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://tuchuang.voooe.cn/images/2023/01/02/avatar.webp" title="头像" alt="头像"></a><div class="post-copyright__author_name">Tom</div><div class="post-copyright__author_desc"></div></div><div class="post-copyright__post__info"><a class="post-copyright__original" title="该文章为原创文章，注意版权协议" href="https://tom9527c.github.io/posts/379319a1.html">原创</a><a class="post-copyright-title"><span onclick="rm.copyPageUrl('https://tom9527c.github.io/posts/379319a1.html')">NPM</span></a></div><div class="post-tools" id="post-tools"><div class="post-tools-left"><div class="rewardLeftButton"></div><div class="shareRight"><div class="share-link mobile"><div class="share-qrcode"><div class="share-button" title="使用手机访问这篇文章"><i class="anzhiyufont anzhiyu-icon-qrcode"></i></div><div class="share-main"><div class="share-main-all"><div id="qrcode" title="https://tom9527c.github.io/posts/379319a1.html"></div><div class="reward-dec">使用手机访问这篇文章</div></div></div></div></div><div class="share-link weibo"><a class="share-button" target="_blank" href="https://service.weibo.com/share/share.php?title=NPM&amp;url=https://tom9527c.github.io/posts/379319a1.html&amp;pic=https://mypic-ezp.pages.dev/img/img26.jpg" rel="external nofollow noreferrer noopener"><i class="anzhiyufont anzhiyu-icon-weibo"></i></a></div><script>function copyCurrentPageUrl() {
+  var currentPageUrl = window.location.href;
+  var input = document.createElement("input");
+  input.setAttribute("value", currentPageUrl);
+  document.body.appendChild(input);
+  input.select();
+  input.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+  document.body.removeChild(input);
+}</script><div class="share-link copyurl"><div class="share-button" id="post-share-url" title="复制链接" onclick="copyCurrentPageUrl()"><i class="anzhiyufont anzhiyu-icon-link"></i></div></div></div></div></div><div class="post-copyright__notice"><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow noreferrer" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://tom9527c.github.io" target="_blank">Tom</a>！</span></div></div><div class="post-tools-right"><div class="tag_share"><div class="post-meta__box"><div class="post-meta__box__tag-list"><a class="post-meta__box__tags" href="/tags/%E5%89%8D%E7%AB%AF/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>前端<span class="tagsPageCount">25</span></a><a class="post-meta__box__tags" href="/tags/NPM/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>NPM<span class="tagsPageCount">1</span></a><a class="post-meta__box__tags" href="/tags/%E5%8C%85%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>包管理工具<span class="tagsPageCount">1</span></a><a class="post-meta__box__tags" href="/tags/node/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>node<span class="tagsPageCount">1</span></a><a class="post-meta__box__tags" href="/tags/yarn/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>yarn<span class="tagsPageCount">1</span></a><a class="post-meta__box__tags" href="/tags/DOS-%E5%91%BD%E4%BB%A4/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>DOS 命令<span class="tagsPageCount">1</span></a></div></div></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/posts/764f33bc.html"><img class="prev-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://mypic-ezp.pages.dev/img/img31.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Webpack</div></div></a></div><div class="next-post pull-right"><a href="/posts/2a87be94.html"><img class="next-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://mypic-ezp.pages.dev/img/img22.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">eggjs</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="anzhiyufont anzhiyu-icon-thumbs-up fa-fw" style="font-size: 1.5rem; margin-right: 4px"></i><span>喜欢这篇文章的人也看了</span></div><div class="relatedPosts-list"><div><a href="/posts/d73c0d37.html" title="ES6"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://mypic-ezp.pages.dev/img/img13.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-09-15</div><div class="title">ES6</div></div></a></div><div><a href="/posts/98f3a6d9.html" title="HTML5"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://mypic-ezp.pages.dev/img/img14.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-09-15</div><div class="title">HTML5</div></div></a></div><div><a href="/posts/e173abca.html" title="HTML基础"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://mypic-ezp.pages.dev/img/img15.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-09-15</div><div class="title">HTML基础</div></div></a></div><div><a href="/posts/b18b9acc.html" title="Javascript基础"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://mypic-ezp.pages.dev/img/img16.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-09-15</div><div class="title">Javascript基础</div></div></a></div><div><a href="/posts/e859d7a7.html" title="CSS3"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://mypic-ezp.pages.dev/img/img11.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-09-15</div><div class="title">CSS3</div></div></a></div><div><a href="/posts/deb23485.html" title="Mobile(移动端开发)"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://mypic-ezp.pages.dev/img/img18.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-09-15</div><div class="title">Mobile(移动端开发)</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="author_top card-content"><div class="author-info__sayhi" id="author-info__sayhi" onclick="anzhiyu.changeSayHelloText()"></div><div class="author-info-avatar"><img class="avatar-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://tuchuang.voooe.cn/images/2023/01/02/avatar.webp" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-status"><img class="g-status" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://bu.dusays.com/2023/08/24/64e6ce9c507bb.png" alt="status"/></div></div><div class="author-info__description">Tom的日常</div></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-bullhorn anzhiyu-shake"></i><span>公告</span></div><div class="announcement_content"><div class="twopeople"><div class="container" style="height:200px;"><canvas class="illo" width="800" height="800" style="max-width:200px;max-height:200px;touch-action:none;width:640px;height:640px;"></canvas></div><script src="https://cdn.guozy.online/js/twopeople1.js"></script><script src="https://cdn.guozy.online/js/zdog.dist.js"></script><script id="rendered-js" src="https://cdn.guozy.online/js/twopeople.js"></script><style>.twopeople{margin:0;align-items:center;justify-content:center;text-align:center;}canvas{display:block;margin:0 auto;cursor:move;}</style></div></div><div id="welcome-info"></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-bars"></i><span>文章目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#NPM"><span class="toc-text">NPM</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85"><span class="toc-text">安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="toc-text">配置文件</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#package-json"><span class="toc-text">package.json</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#package-lock-json"><span class="toc-text">package-lock.json</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#CLI%E5%91%BD%E4%BB%A4"><span class="toc-text">CLI命令</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#yarn"><span class="toc-text">yarn</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#DOS-%E5%91%BD%E4%BB%A4"><span class="toc-text">DOS 命令</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-history"></i><span>最近发布</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/87e72661.html" title="uniapp-vue2 页面生成PDF"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://mypic-ezp.pages.dev/img/img61.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="uniapp-vue2 页面生成PDF"/></a><div class="content"><a class="title" href="/posts/87e72661.html" title="uniapp-vue2 页面生成PDF">uniapp-vue2 页面生成PDF</a><time datetime="2024-07-10T06:20:59.000Z" title="发表于 2024-07-10 14:20:59">2024-07-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/bb44c5f1.html" title="el-input 限制输入框只能输入数字和小数"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://mypic-ezp.pages.dev/img/img38.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="el-input 限制输入框只能输入数字和小数"/></a><div class="content"><a class="title" href="/posts/bb44c5f1.html" title="el-input 限制输入框只能输入数字和小数">el-input 限制输入框只能输入数字和小数</a><time datetime="2024-03-20T08:20:15.000Z" title="发表于 2024-03-20 16:20:15">2024-03-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/b5bf5235.html" title="el-input number类型右侧加减隐藏和中文光标偏移"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://mypic-ezp.pages.dev/img/img39.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="el-input number类型右侧加减隐藏和中文光标偏移"/></a><div class="content"><a class="title" href="/posts/b5bf5235.html" title="el-input number类型右侧加减隐藏和中文光标偏移">el-input number类型右侧加减隐藏和中文光标偏移</a><time datetime="2024-03-20T08:16:05.000Z" title="发表于 2024-03-20 16:16:05">2024-03-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/2201da6a.html" title="Dialog设置遮罩穿透"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://mypic-ezp.pages.dev/img/img37.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Dialog设置遮罩穿透"/></a><div class="content"><a class="title" href="/posts/2201da6a.html" title="Dialog设置遮罩穿透">Dialog设置遮罩穿透</a><time datetime="2024-03-20T07:49:33.000Z" title="发表于 2024-03-20 15:49:33">2024-03-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/5f3c0533.html" title="常用命令"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://mypic-ezp.pages.dev/img/img36.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="常用命令"/></a><div class="content"><a class="title" href="/posts/5f3c0533.html" title="常用命令">常用命令</a><time datetime="2024-02-25T14:11:38.000Z" title="发表于 2024-02-25 22:11:38">2024-02-25</time></div></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2023 - 2024 By Tom</div><div id="workboard"><img class="workSituationImg boardsign" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://cdn.guozy.online/config/Aurora-%E4%B8%8A%E7%8F%AD%E6%91%B8%E9%B1%BC%E4%B8%AD.svg" alt="距离月入25k也就还差一个大佬带我~" title="距离月入25k也就还差一个大佬带我~"/><div id="runtimeTextTip"></div></div></div></footer></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="sidebar-site-data site-data is-center"><a href="/archives/" title="archive"><div class="headline">文章</div><div class="length-num">68</div></a><a href="/tags/" title="tag"><div class="headline">标签</div><div class="length-num">61</div></a><a href="/categories/" title="category"><div class="headline">分类</div><div class="length-num">7</div></a></div><span class="sidebar-menu-item-title">功能</span><div class="sidebar-menu-item"><a class="darkmode_switchbutton menu-child" href="javascript:void(0);" rel="external nofollow noreferrer" title="显示模式"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span>显示模式</span></a></div><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网页</div><div class="back-menu-list"><a class="back-menu-item" href="https://tom9527c.github.io/" title="博客"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/favicon.ico" alt="博客"/><span class="back-menu-item-text">博客</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">项目</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener external nofollow noreferrer" href="https://image.anheyu.com/" title="安知鱼图床"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://image.anheyu.com/favicon.ico" alt="安知鱼图床"/><span class="back-menu-item-text">安知鱼图床</span></a></div></div></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);" rel="external nofollow noreferrer"><span> 文章</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);" rel="external nofollow noreferrer"><span> 友链</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/comments/"><i class="anzhiyufont anzhiyu-icon-envelope faa-tada" style="font-size: 0.9em;"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);" rel="external nofollow noreferrer"><span> 我的</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/music/"><i class="anzhiyufont anzhiyu-icon-music faa-tada" style="font-size: 0.9em;"></i><span> 音乐馆</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/bangumis/"><i class="anzhiyufont anzhiyu-icon-bilibili faa-tada" style="font-size: 0.9em;"></i><span> 追番页</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/album/"><i class="anzhiyufont anzhiyu-icon-images faa-tada" style="font-size: 0.9em;"></i><span> 相册集</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/collect/"><i class="anzhiyufont anzhiyu-icon-book-open faa-tada" style="font-size: 0.9em;"></i><span> 藏宝阁</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);" rel="external nofollow noreferrer"><span> 关于</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> 关于本人</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><i class="anzhiyufont anzhiyu-icon-lightbulb faa-tada" style="font-size: 0.9em;"></i><span> 闲言碎语</span></a></li><li><a class="site-page child faa-parent animated-hover" href="javascript:toRandomPost()" rel="external nofollow noreferrer"><i class="anzhiyufont anzhiyu-icon-shoe-prints1 faa-tada" style="font-size: 0.9em;"></i><span> 随便逛逛</span></a></li></ul></div></div><span class="sidebar-menu-item-title">标签</span></div></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="anzhiyufont anzhiyu-icon-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">简</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="anzhiyufont anzhiyu-icon-gear"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="anzhiyufont anzhiyu-icon-list-ul"></i></button><button type="button" title="切换背景" onclick="toggleWinbox()"><i class="fas fa-display"></i></button><button id="go-up" type="button" title="回到顶部"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></button></div></div><div id="nav-music"><a id="nav-music-hoverTips" onclick="anzhiyu.musicToggle()" accesskey="m">播放音乐</a><div id="console-music-bg"></div><meting-js id="8152976493" server="netease" type="playlist" mutex="true" preload="none" theme="var(--anzhiyu-main)" data-lrctype="0" order="random" volume="0.7"></meting-js></div><div id="algolia-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><button class="search-close-button"><i class="anzhiyufont anzhiyu-icon-xmark"></i></button></nav><div class="search-wrap"><div id="algolia-search-input"></div><hr/><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-info"><div class="algolia-stats"></div><div class="algolia-poweredBy"></div></div></div></div></div><div id="search-mask"></div></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="anzhiyufont anzhiyu-icon-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="anzhiyufont anzhiyu-icon-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="anzhiyufont anzhiyu-icon-arrow-rotate-right" style="font-size: 1rem;"></i></div><div class="rightMenu-item" id="menu-top"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuPlugin"><div class="rightMenu-item" id="menu-copytext"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制选中文本</span></div><div class="rightMenu-item" id="menu-pastetext"><i class="anzhiyufont anzhiyu-icon-paste"></i><span>粘贴文本</span></div><a class="rightMenu-item" id="menu-commenttext"><i class="anzhiyufont anzhiyu-icon-comment-medical"></i><span>引用到评论</span></a><div class="rightMenu-item" id="menu-newwindow"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开</span></div><div class="rightMenu-item" id="menu-copylink"><i class="anzhiyufont anzhiyu-icon-link"></i><span>复制链接地址</span></div><div class="rightMenu-item" id="menu-copyimg"><i class="anzhiyufont anzhiyu-icon-images"></i><span>复制此图片</span></div><div class="rightMenu-item" id="menu-downloadimg"><i class="anzhiyufont anzhiyu-icon-download"></i><span>下载此图片</span></div><div class="rightMenu-item" id="menu-newwindowimg"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开图片</span></div><div class="rightMenu-item" id="menu-search"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>站内搜索</span></div><div class="rightMenu-item" id="menu-searchBaidu"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>百度搜索</span></div><div class="rightMenu-item" id="menu-music-toggle"><i class="anzhiyufont anzhiyu-icon-play"></i><span>播放音乐</span></div><div class="rightMenu-item" id="menu-music-back"><i class="anzhiyufont anzhiyu-icon-backward"></i><span>切换到上一首</span></div><div class="rightMenu-item" id="menu-music-forward"><i class="anzhiyufont anzhiyu-icon-forward"></i><span>切换到下一首</span></div><div class="rightMenu-item" id="menu-music-playlist" onclick="window.open(&quot;https://y.qq.com/n/ryqq/playlist/8802438608&quot;, &quot;_blank&quot;);" style="display: none;"><i class="anzhiyufont anzhiyu-icon-radio"></i><span>查看所有歌曲</span></div><div class="rightMenu-item" id="menu-music-copyMusicName"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制歌名</span></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" id="menu-randomPost"><i class="anzhiyufont anzhiyu-icon-shuffle"></i><span>随便逛逛</span></a><a class="rightMenu-item menu-link" href="/categories/"><i class="anzhiyufont anzhiyu-icon-cube"></i><span>博客分类</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags"></i><span>文章标签</span></a></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item" id="menu-copy" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制地址</span></a><a class="rightMenu-item" id="menu-commentBarrage" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="anzhiyufont anzhiyu-icon-message"></i><span class="menu-commentBarrage-text">关闭热评</span></a><a class="rightMenu-item" id="menu-darkmode" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span class="menu-darkmode-text">深色模式</span></a><a class="rightMenu-item" id="menu-translate" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="anzhiyufont anzhiyu-icon-language"></i><span>轉為繁體</span></a></div></div><div id="rightmenu-mask"></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.cbd.int/@fancyapps/ui@5.0.28/dist/fancybox/fancybox.umd.js"></script><script src="https://cdn.cbd.int/instant.page@5.2.0/instantpage.js" type="module"></script><script src="https://cdn.cbd.int/vanilla-lazyload@17.8.5/dist/lazyload.iife.min.js"></script><script src="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.cbd.int/pangu@4.0.7/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (true){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script>var meting_api = "https://meting.qjqq.cn/?server=:server&type=:type&id=:id&auth=:auth&r=:r";
+</script><canvas id="universe"></canvas><script async src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/dark/dark.js"></script><script>// 消除控制台打印
+var HoldLog = console.log;
+console.log = function () {};
+let now1 = new Date();
+queueMicrotask(() => {
+  const Log = function () {
+    HoldLog.apply(console, arguments);
+  }; //在恢复前输出日志
+  const grt = new Date("4/27/2023 22:18:52"); //此处修改你的建站时间或者网站上线时间
+  now1.setTime(now1.getTime() + 250);
+  const days = (now1 - grt) / 1000 / 60 / 60 / 24;
+  const dnum = Math.floor(days);
+  const ascll = [
+    `欢迎使用安知鱼!`,
+    `生活明朗, 万物可爱`,
+    `
+        
+       █████╗ ███╗   ██╗███████╗██╗  ██╗██╗██╗   ██╗██╗   ██╗
+      ██╔══██╗████╗  ██║╚══███╔╝██║  ██║██║╚██╗ ██╔╝██║   ██║
+      ███████║██╔██╗ ██║  ███╔╝ ███████║██║ ╚████╔╝ ██║   ██║
+      ██╔══██║██║╚██╗██║ ███╔╝  ██╔══██║██║  ╚██╔╝  ██║   ██║
+      ██║  ██║██║ ╚████║███████╗██║  ██║██║   ██║   ╚██████╔╝
+      ╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝╚═╝   ╚═╝    ╚═════╝
+        
+        `,
+    "已上线",
+    dnum,
+    "天",
+    "©2023 By 安知鱼 V1.6.12",
+  ];
+  const ascll2 = [`NCC2-036`, `调用前置摄像头拍照成功，识别为【小笨蛋】.`, `Photo captured: `, `🤪`];
+
+  setTimeout(
+    Log.bind(
+      console,
+      `\n%c${ascll[0]} %c ${ascll[1]} %c ${ascll[2]} %c${ascll[3]}%c ${ascll[4]}%c ${ascll[5]}\n\n%c ${ascll[6]}\n`,
+      "color:#425AEF",
+      "",
+      "color:#425AEF",
+      "color:#425AEF",
+      "",
+      "color:#425AEF",
+      ""
+    )
+  );
+  setTimeout(
+    Log.bind(
+      console,
+      `%c ${ascll2[0]} %c ${ascll2[1]} %c \n${ascll2[2]} %c\n${ascll2[3]}\n`,
+      "color:white; background-color:#4fd953",
+      "",
+      "",
+      'background:url("https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/tinggge.gif") no-repeat;font-size:450%'
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c WELCOME %c 你好，小笨蛋.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(
+      console,
+      "%c ⚡ Powered by 安知鱼 %c 你正在访问 Tom 的博客.",
+      "color:white; background-color:#f0ad4e",
+      ""
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c W23-12 %c 你已打开控制台.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(console, "%c S013-782 %c 你现在正处于监控中.", "color:white; background-color:#d9534f", "")
+  );
+});</script><script async src="/anzhiyu/random.js"></script><script async="async">(function () {
+  var grt = new Date("4/27/2023 22:18:52"); //设置网站上线时间
+  var now = new Date();
+  var dnum;
+  var hnum;
+  var mnum;
+  var snum;
+  var nowHour;
+
+  // 计算并更新天数、小时数、分钟数和秒数
+  function updateTime() {
+    now = new Date(); // 更新 now 的值
+    nowHour = now.getHours(); // 更新 nowHour 的值
+    var days = (now - grt) / 1000 / 60 / 60 / 24;
+    dnum = Math.floor(days);
+    var hours = (now - grt) / 1000 / 60 / 60 - 24 * dnum;
+    hnum = Math.floor(hours);
+    if (String(hnum).length == 1) {
+      hnum = "0" + hnum;
+    }
+    var minutes = (now - grt) / 1000 / 60 - 24 * 60 * dnum - 60 * hnum;
+    mnum = Math.floor(minutes);
+    if (String(mnum).length == 1) {
+      mnum = "0" + mnum;
+    }
+    var seconds = (now - grt) / 1000 - 24 * 60 * 60 * dnum - 60 * 60 * hnum - 60 * mnum;
+    snum = Math.round(seconds);
+    if (String(snum).length == 1) {
+      snum = "0" + snum;
+    }
+  }
+
+  // 更新网页中显示的网站运行时间
+  function updateHtml() {
+    const footer = document.getElementById("footer");
+    if (!footer) return
+    let currentTimeHtml = "";
+    if (nowHour < 18 && nowHour >= 9) {
+      // 如果是上班时间，默认就是"安知鱼-上班摸鱼中.svg"图片，不需要更改
+      currentTimeHtml = `本站居然运行了 ${dnum} 天<span id='runtime'> ${hnum} 小时 ${mnum} 分 ${snum} 秒 </span><i class='anzhiyufont anzhiyu-icon-heartbeat' style='color:red'></i>`;
+    } else {
+      // 如果是下班时间，插入"安知鱼-下班啦.svg"图片
+      let img = document.querySelector("#workboard .workSituationImg");
+      if (img != null) {
+        img.src = "https://cdn.guozy.online/config/Aurora-%E4%B8%8B%E7%8F%AD%E5%95%A6.svg";
+        img.title = "下班了就该开开心心的玩耍，嘿嘿~";
+        img.alt = "下班了就该开开心心的玩耍，嘿嘿~";
+      }
+
+      currentTimeHtml = `本站居然运行了 ${dnum} 天<span id='runtime'> ${hnum} 小时 ${mnum} 分 ${snum} 秒 </span><i class='anzhiyufont anzhiyu-icon-heartbeat' style='color:red'></i>`;
+    }
+
+    if (document.getElementById("runtimeTextTip")) {
+      document.getElementById("runtimeTextTip").innerHTML = currentTimeHtml;
+    }
+  }
+
+  setInterval(() => {
+    updateTime();
+    updateHtml();
+  }, 1000);
+})();</script><script src="https://cdn.cbd.int/algoliasearch@4.18.0/dist/algoliasearch-lite.umd.js"></script><script src="https://cdn.cbd.int/instantsearch.js@4.60.0/dist/instantsearch.production.min.js"></script><script src="/js/search/algolia.js"></script><div class="js-pjax"><input type="hidden" name="page-type" id="page-type" value="post"></div><script async data-pjax src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.1/bubble/bubble.js"></script><script>var visitorMail = "";
+</script><script async data-pjax src="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/waterfall/waterfall.js"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/qrcodejs/1.0.0/qrcode.min.js"></script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.9/icon/ali_iconfont_css.css"><script async src="//npm.elemecdn.com/pace-js@1.2.4/pace.min.js"></script><script async src="/custom/js/welcome.js"></script><script async src="/custom/js/vue.min.js"></script><script async src="/custom/js/elementUI.min.js"></script><script async src="/custom/js/imgStatus.min.js"></script><script async src="/custom/js/lately.min.js"></script><script async src="/custom/js/dailyPhoto.js" async></script><script async src="/custom/js/fps.js"></script><script async src="/custom/js/winBox/winbox.bundle.min.js"></script><script defer src="/custom/js/winBox/winbox.js"></script><script async src="/custom/js/aurora.js"></script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/aplayer/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.cbd.int/anzhiyu-blog-static@1.0.1/js/APlayer.min.js"></script><script src="https://cdn.cbd.int/hexo-anzhiyu-music@1.0.1/assets/js/Meting2.min.js"></script><script src="https://cdn.cbd.int/pjax@0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+  // removeEventListener scroll 
+  anzhiyu.removeGlobalFnEvent('pjax')
+  anzhiyu.removeGlobalFnEvent('themeChange')
+
+  document.getElementById('rightside').classList.remove('rightside-show')
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', e => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script charset="UTF-8" src="https://cdn.cbd.int/anzhiyu-theme-static@1.1.5/accesskey/accesskey.js"></script></div><div id="popup-window"><div class="popup-window-title">通知</div><div class="popup-window-divider"></div><div class="popup-window-content"><div class="popup-tip">你好呀</div><div class="popup-link"><i class="anzhiyufont anzhiyu-icon-arrow-circle-right"></i></div></div></div><script async>window.onload=function(){var a=document.createElement('script'),b=document.getElementsByTagName('script')[0];a.type='text/javascript',a.async=!0,a.src='/sw-register.js?v='+Date.now(),b.parentNode.insertBefore(a,b)};</script></body></html>
